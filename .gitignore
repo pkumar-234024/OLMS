@@ -1,0 +1,15 @@
+/OLMS/.vs
+/OLMS/src/OLMS.Core/bin
+/OLMS/src/OLMS.Core/obj
+/OLMS/tests/OLMS.FunctionalTests/bin
+/OLMS/tests/OLMS.FunctionalTests/obj
+/OLMS/tests/OLMS.IntegrationTests/bin
+/OLMS/tests/OLMS.IntegrationTests/obj
+/OLMS/tests/OLMS.UnitTests/bin
+/OLMS/tests/OLMS.UnitTests/obj
+/OLMS/src/OLMS.Infrastructure/bin
+/OLMS/src/OLMS.Infrastructure/obj
+/OLMS/src/OLMS.UseCases/bin
+/OLMS/src/OLMS.UseCases/obj
+/OLMS/src/OLMS.Web/bin
+/OLMS/src/OLMS.Web/obj

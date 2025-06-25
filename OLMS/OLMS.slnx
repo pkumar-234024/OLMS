@@ -1,0 +1,30 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="CleanArchitecture.nuspec" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/OLMS.AspireHost/OLMS.AspireHost.csproj" />
+    <Project Path="src/OLMS.Core/OLMS.Core.csproj" />
+    <Project Path="src/OLMS.Infrastructure/OLMS.Infrastructure.csproj" />
+    <Project Path="src/OLMS.ServiceDefaults/OLMS.ServiceDefaults.csproj" />
+    <Project Path="src/OLMS.UseCases/OLMS.UseCases.csproj" />
+    <Project Path="src/OLMS.Web/OLMS.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/OLMS.FunctionalTests/OLMS.FunctionalTests.csproj">
+      <BuildDependency Project="src/OLMS.Web/OLMS.Web.csproj" />
+    </Project>
+    <Project Path="tests/OLMS.IntegrationTests/OLMS.IntegrationTests.csproj">
+      <BuildDependency Project="src/OLMS.Infrastructure/OLMS.Infrastructure.csproj" />
+    </Project>
+    <Project Path="tests/OLMS.UnitTests/OLMS.UnitTests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,58 @@
+2025-06-25 14:42:07.743 +05:30 [INF] Registered 5 endpoints in 2,108 milliseconds.
+2025-06-25 14:42:09.361 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2025-06-25 14:42:09.453 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Contributors" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Contributors" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Status" INTEGER NOT NULL,
+    "PhoneNumber_CountryCode" TEXT NULL,
+    "PhoneNumber_Number" TEXT NULL,
+    "PhoneNumber_Extension" TEXT NULL
+);
+2025-06-25 14:42:09.631 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Contributors" AS "c")
+2025-06-25 14:42:09.757 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 7), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-06-25 14:42:09.775 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Contributors" ("Name", "Status")
+VALUES (@p0, @p1)
+RETURNING "Id";
+2025-06-25 14:42:10.000 +05:30 [INF] Now listening on: https://localhost:57679
+2025-06-25 14:42:10.006 +05:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-06-25 14:42:10.079 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-25 14:42:10.080 +05:30 [INF] Hosting environment: Development
+2025-06-25 14:42:10.081 +05:30 [INF] Content root path: D:\F\mine\gitgolder\OLMS\OLMS\src\OLMS.Web
+2025-06-25 14:42:14.366 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/ - null null
+2025-06-25 14:42:14.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/ - 404 0 null 360.2076ms
+2025-06-25 14:42:14.720 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/ - null null
+2025-06-25 14:42:14.721 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/, Response status code: 404
+2025-06-25 14:42:14.726 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/ - 404 0 null 6.7653ms
+2025-06-25 14:42:14.730 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:57679/, Response status code: 404
+2025-06-25 14:42:19.541 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.html - null null
+2025-06-25 14:42:19.598 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.html - 200 null text/html; charset=utf-8 57.3456ms
+2025-06-25 14:42:19.657 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - null null
+2025-06-25 14:42:19.662 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - null null
+2025-06-25 14:42:19.662 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - null null
+2025-06-25 14:42:19.662 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/index.css - null null
+2025-06-25 14:42:19.735 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-25 14:42:19.836 +05:30 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-06-25 14:42:19.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/_framework/aspnetcore-browser-refresh.js - 200 16501 application/javascript; charset=utf-8 109.6531ms
+2025-06-25 14:42:19.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/index.css - 200 218 text/css 182.0484ms
+2025-06-25 14:42:19.895 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-06-25 14:42:19.895 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-06-25 14:42:19.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-standalone-preset.js - 200 230294 text/javascript 236.5615ms
+2025-06-25 14:42:19.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui.css - 200 152073 text/css 241.6649ms
+2025-06-25 14:42:19.907 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/_vs/browserLink - null null
+2025-06-25 14:42:19.914 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-06-25 14:42:19.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/swagger-ui-bundle.js - 200 1452754 text/javascript 253.9171ms
+2025-06-25 14:42:19.984 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.3767ms
+2025-06-25 14:42:20.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - null null
+2025-06-25 14:42:20.347 +05:30 [INF] Request starting HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - null null
+2025-06-25 14:42:20.350 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-25 14:42:20.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/favicon-32x32.png - 200 628 image/png 4.7626ms
+2025-06-25 14:42:20.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:57679/swagger/v1/swagger.json - 200 null application/json; charset=utf-8 101.5215ms
